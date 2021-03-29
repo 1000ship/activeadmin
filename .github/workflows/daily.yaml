@@ -76,7 +76,7 @@ jobs:
 
       - name: Run RSpec tests
         run: |
-          PARALLEL_TEST_HEARTBEAT_INTERVAL=3600 bin/parallel_rspec spec/
+          bin/parallel_rspec spec/
           RSPEC_FILESYSTEM_CHANGES=true bin/rspec
 
       - name: Restore cached cucumber runtimes
